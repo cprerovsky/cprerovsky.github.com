@@ -1,19 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>{% if page.title }%} - {{page.title}}{% endif %}</title>
+    <meta charset="utf-8">
+    <title>The Agile Truth{% if page.title }%} - {{page.title}}{% endif %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="/assets/css/bootstrap.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Fauna+One' rel='stylesheet' type='text/css'>
+    <style>
+      body {
+        padding-top: 60px;
+        font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+
+
+      }
+
+      h1, h2, h3, h4, h5, h6 {
+        font-family: Fauna One, monospace;
+      }
+
+      h2 a:hover {
+        color: white;
+        text-decoration: none;
+      }
+
+      p {
+        margin: 15px 10px;
+      }
+
+      .blogtitle, .subtitle, h1, h2 {
+        display: inline-block;
+        font-family: Fauna One, monospace;
+        font-size: 50px;
+        padding: 5px 10px;
+        font-weight: normal;
+        background: rgb(20, 20, 20);
+        color: rgb(0, 200, 170);
+        text-shadow: 1px 1px 0px red;
+      }
+
+      .subtitle, h1, h2 {
+        font-size: 18px;
+        color: white;
+        background: rgb(40, 40, 40);
+        text-shadow: none;
+        height: 20px;
+        line-height: 20px;
+      }
+
+      h1 {
+        font-size: 28px;
+      }
+
+      #header {
+        height: 150px;
+      }
+
+    </style>
+ 
   </head>
   <body>
 
-<div>{{content}}</div>
+    <div id="header" class="container">
+      <h2>
+        <a href="#" class="blogtitle">The Agile Truth</a>
+      </h2>
 
-<div><ul>
-  {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-    </li>
-  {% endfor %}
-</ul></div>
+      <span class="subtitle">
+        Agile software development and management
+      </span>
+    </div>
 
+    <div class="container">
+      <div class="row">
+        <h1>{{page.title}}</h1>
+        <div class="span7">{{content}}</div>
+        
+        <div class="span4 pull-right">
+          <ul>
+            {% for post in site.posts %}
+              <li>
+                <a href="{{ post.url }}">{{ post.title }}</a>
+              </li>
+            {% endfor %}
+          </ul>
+
+          <hr />
+
+          <ul class="nav nav-pills">
+              <li><a href="http://www.facebook.com/c.prerovsky">Facebook</a></li>
+              <li><a href="http://www.twitter.com/blacktarmac">Twitter</a></li>
+              <li><a href="https://plus.google.com/117356760645643944288">Google+</a></li>
+            </ul>
+          </div>   
+        </div>
+      </div>
+    </div>
   </body>
 </html>

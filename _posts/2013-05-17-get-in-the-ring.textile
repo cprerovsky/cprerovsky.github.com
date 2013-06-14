@@ -1,0 +1,17 @@
+---
+layout: default
+title: Get in the ring
+tags: kanban, scrum, velocity
+---
+
+You've read the books. You attended the training. You've been to the conferences. You start your first sprint, you stumble on your second, you fail on the third. The agile truth can be overwhelming at times, but failing is the first step to be taken.
+
+h2. Why you must fail to succeed
+
+Any agile approach you pick will have a huge impact on how you and your team work. I feel that if things don't break, you probably did something wrong. Switching to an agile process means that people will have to leave their comfort zone and discover something new. Most of the people I know don't enjoy change that much, and of course this includes me. Funny thing is, that my team made a rather smooth transition without any significant signs of resistance. It was the project that took all the heat.
+
+So my first lesson learned was that just switching to an agile process won't magically double your velocity. That may not be news for you. I learned to be conservative with my expectations.
+
+h2. Aim low first (then shoot for the stars)
+
+Setting realistic and very conservative goals will help you a lot when first introducing an agile process like Scrum or Kanban. The main benefit of those methods is Kaizen - a process of continuous improvement and learning from what went wrong. If you never fail, you miss your chance to learn. Sticking to your process and building from your errors will help you to improve - bit by bit. For me the benefit of learning from failure struck far earlier than I was expecting. You'll be shooting for the stars soon.
