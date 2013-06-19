@@ -9,56 +9,91 @@
 
     <!-- Le styles -->
     <link href="/assets/css/bootstrap.css" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=Fauna+One' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
     <style>
       body {
-        padding-top: 60px;
         font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
-
-
+        margin-top: 40px;
+        background: #313131 url(/assets/img/octopus.png) no-repeat fixed;
+        background-position-x: 90%;
       }
 
       h1, h2, h3, h4, h5, h6 {
-        font-family: Fauna One, monospace;
+        font-family: Lobster, cursive;
+        color: #313131;
       }
 
-      h2 a:hover {
+      #header {
+        height: 100px;
+      }
+
+      #header h2 a {
+        background-color: transparent;
+        padding: 5px 15px;
+        color: white;
+        font-size: 90px;
+        text-shadow: 5px 5px 15px rgba(0,0,0,0.3);
+      }
+
+      #header h2 a:hover {
         color: white;
         text-decoration: none;
       }
 
-      p {
-        margin: 15px 10px;
-      }
-
-      .blogtitle, .subtitle, h1, h2 {
-        display: inline-block;
-        font-family: Fauna One, monospace;
-        font-size: 50px;
-        padding: 5px 10px;
-        font-weight: normal;
-        background: rgb(20, 20, 20);
-        color: rgb(0, 200, 170);
-        text-shadow: 1px 1px 0px red;
-      }
-
-      .subtitle, h1, h2 {
-        font-size: 18px;
+      #header span {
+        background-color: rgb(80, 80, 80);
         color: white;
-        background: rgb(40, 40, 40);
-        text-shadow: none;
-        height: 20px;
-        line-height: 20px;
+        padding: 5px 15px;
       }
 
-      h1 {
-        font-size: 28px;
+      a {
+        background-color: #005580;
+        color: white;
+        padding: 3px 5px;
+        border-radius: 5px;
       }
 
-      #header {
-        height: 150px;
+      a:hover {
+        color: white;
+        text-decoration: none;
+        background-color: #0088cc;
+        transition: background-color 0.5s ease-out;
       }
 
+      #content {
+        line-height: 170%;
+        background: white;
+        padding: 5px 25px 25px 25px;
+        box-shadow: 10px 10px 10px rgba(0,0,0,0.3);
+      }
+
+      #content h1, h2, h3 {
+        padding: 20px 0 10px 0;
+      }
+
+      #footer {
+        height: 100px;
+      }
+
+      #sidebar .row {
+        background: white;
+        padding: 5px 35px 45px 35px;
+        margin-bottom: 30px;
+      }
+
+      #sidebar ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      #sidebar ul li {
+        margin: 10px 0;
+      }
+
+      #content, #sidebar .row {
+        border-radius: 5px;
+      }
     </style>
  
   </head>
@@ -66,40 +101,40 @@
 
     <div id="header" class="container">
       <h2>
-        <a href="#" class="blogtitle">The Agile Truth</a>
+        <a href="http://www.agiletruth.com">The Agile Truth</a>
       </h2>
-
-      <span class="subtitle">
-        Agile software development and management
-      </span>
     </div>
 
     <div class="container">
       <div class="row">
-        <h1>Get in the ring</h1>
-        <div class="span7"><p>You&#8217;ve read the books. You attended the training. You&#8217;ve been to the conferences. You start your first sprint, you stumble on your second, you fail on the third. The agile truth can be overwhelming at times, but failing is the first step to be taken.</p>
+        <div id="content" class="span7">
+          <h1>Get in the ring</h1>
+          <p>You&#8217;ve read the books. You attended the training. You&#8217;ve been to the conferences. You start your first sprint, you stumble on your second, you fail on the third. The agile truth can be overwhelming at times, but failing is the first step to be taken.</p>
 <h2>Why you must fail to succeed</h2>
 <p>Any agile approach you pick will have a huge impact on how you and your team work. I feel that if things don&#8217;t break, you probably did something wrong. Switching to an agile process means that people will have to leave their comfort zone and discover something new. Most of the people I know don&#8217;t enjoy change that much, and of course this includes me. Funny thing is, that my team made a rather smooth transition without any significant signs of resistance. It was the project that took all the heat.</p>
 <p>So my first lesson learned was that just switching to an agile process won&#8217;t magically double your velocity. That may not be news for you. I learned to be conservative with my expectations.</p>
 <h2>Aim low first (then shoot for the stars)</h2>
-<p>Setting realistic and very conservative goals will help you a lot when first introducing an agile process like Scrum or Kanban. The main benefit of those methods is Kaizen &#8211; a process of continuous improvement and learning from what went wrong. If you never fail, you miss your chance to learn. Sticking to your process and building from your errors will help you to improve &#8211; bit by bit. For me the benefit of learning from failure struck far earlier than I was expecting. You&#8217;ll be shooting for the stars soon.</p></div>
+<p>Setting realistic and very conservative goals will help you a lot when first introducing an agile process like Scrum or Kanban. The main benefit of those methods is Kaizen &#8211; a process of continuous improvement and learning from what went wrong. If you never fail, you miss your chance to learn. Sticking to your process and building from your errors will help you to improve &#8211; bit by bit. For me the benefit of learning from failure struck far earlier than I was expecting. You&#8217;ll be shooting for the stars soon.</p>
+        </div>
         
-        <div class="span4 pull-right">
-          <ul>
-            
-              <li>
-                <a href="/2013/06/12/this-is-how-we-post.html">Blogging Like a Hacker</a>
-              </li>
-            
-              <li>
-                <a href="/2013/05/17/get-in-the-ring.html">Get in the ring</a>
-              </li>
-            
-          </ul>
-
-          <hr />
-
-          <ul class="nav nav-pills">
+        <div id="sidebar" class="span4 pull-right">
+          <div class="row">
+            <h2>Posts</h2>
+            <ul>
+              
+                <li>
+                  <a href="/2013/06/12/this-is-how-we-post.html">Blogging Like a Hacker</a>
+                </li>
+              
+                <li>
+                  <a href="/2013/05/17/get-in-the-ring.html">Get in the ring</a>
+                </li>
+              
+            </ul>
+          </div>
+          <div class="row">
+            <h2>Profiles</h2>
+            <ul>
               <li><a href="http://www.facebook.com/c.prerovsky">Facebook</a></li>
               <li><a href="http://www.twitter.com/blacktarmac">Twitter</a></li>
               <li><a href="https://plus.google.com/117356760645643944288">Google+</a></li>
@@ -108,5 +143,18 @@
         </div>
       </div>
     </div>
+
+    <div id="footer" class="container">
+    </div>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script type="text/javascript">
+$(function () {
+  var $document = $(document),
+    $body = $(document.body);
+  $document.on('scroll', function () {
+    $body.css('background-position-y', ($document.scrollTop() / 25) + 'px');
+  });
+});
+  </script>
   </body>
 </html>
