@@ -8,104 +8,38 @@
     <meta name="author" content="">
 
     <!-- Le styles -->
-    <link href="/assets/css/bootstrap.css" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
-    <style>
-      body {
-        font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
-        margin-top: 40px;
-        background: #313131 url(/assets/img/octopus.png) no-repeat fixed;
-        background-position-x: 90%;
-      }
-
-      h1, h2, h3, h4, h5, h6 {
-        font-family: Lobster, cursive;
-        color: #313131;
-      }
-
-      #header {
-        height: 100px;
-      }
-
-      #header h2 a {
-        background-color: transparent;
-        padding: 5px 15px;
-        color: white;
-        font-size: 90px;
-        text-shadow: 5px 5px 15px rgba(0,0,0,0.3);
-      }
-
-      #header h2 a:hover {
-        color: white;
-        text-decoration: none;
-      }
-
-      #header span {
-        background-color: rgb(80, 80, 80);
-        color: white;
-        padding: 5px 15px;
-      }
-
-      a {
-        background-color: #005580;
-        color: white;
-        padding: 3px 5px;
-        border-radius: 5px;
-      }
-
-      a:hover {
-        color: white;
-        text-decoration: none;
-        background-color: #0088cc;
-        transition: background-color 0.5s ease-out;
-      }
-
-      #content {
-        line-height: 170%;
-        background: white;
-        padding: 5px 25px 25px 25px;
-        box-shadow: 10px 10px 10px rgba(0,0,0,0.3);
-      }
-
-      #content h1, h2, h3 {
-        padding: 20px 0 10px 0;
-      }
-
-      #footer {
-        height: 100px;
-      }
-
-      #sidebar .row {
-        background: white;
-        padding: 5px 35px 45px 35px;
-        margin-bottom: 30px;
-      }
-
-      #sidebar ul {
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
-      }
-
-      #sidebar ul li {
-        margin: 10px 0;
-      }
-
-      #content, #sidebar .row {
-        border-radius: 5px;
-      }
-    </style>
- 
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
   </head>
   <body>
 
-    <div id="header" class="container">
-      <h2>
-        <a href="http://www.agiletruth.com">The Agile Truth</a>
-      </h2>
-    </div>
-
     <div class="container">
+
+      <header class="jumbotron subhead" id="overview">
+        <div class="row">
+          <div class="span8">
+            <h1><a href="http://www.agiletruth.com">The Agile Truth</a></h1>
+            <p class="lead">about the journey of agile software development </p>
+          </div>
+          <div class="span4">
+            <div class="bsa">
+                <div id="bsap_1277971" class="bsarocks bsap_c466df00a3cd5ee8568b5c4983b6bb19"></div>
+            </div>
+          </div>
+        </div>
+        <!--div class="subnav">
+          <ul class="nav nav-pills">
+            <li><a href="#typography">Typography</a></li>
+            <li><a href="#navbar">Navbar</a></li>
+            <li><a href="#buttons">Buttons</a></li>
+            <li><a href="#forms">Forms</a></li>
+            <li><a href="#tables">Tables</a></li>
+            <li><a href="#miscellaneous">Miscellaneous</a></li>
+          </ul>
+        </div-->
+      </header>
+
+
+
       <div class="row">
         <div id="content" class="span7">
           <h1>Welcome</h1>
@@ -113,7 +47,7 @@
         </div>
         
         <div id="sidebar" class="span4 pull-right">
-          <div class="row">
+          <div class="row well">
             <h2>Posts</h2>
             <ul>
               
@@ -127,7 +61,7 @@
               
             </ul>
           </div>
-          <div class="row">
+          <div class="row well">
             <h2>Profiles</h2>
             <ul>
               <li><a href="http://www.facebook.com/c.prerovsky">Facebook</a></li>
@@ -141,15 +75,5 @@
 
     <div id="footer" class="container">
     </div>
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-  <script type="text/javascript">
-$(function () {
-  var $document = $(document),
-    $body = $(document.body);
-  $document.on('scroll', function () {
-    $body.css('background-position-y', ($document.scrollTop() / 25) + 'px');
-  });
-});
-  </script>
   </body>
 </html>
